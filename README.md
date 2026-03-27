@@ -39,7 +39,6 @@ skills/
 | Skill | Author | Description |
 |-------|--------|-------------|
 | `louise-technical-discovery-research` | Louise | Decision-grade, citation-backed company intelligence briefs using Gap Selling methodology |
-| `louise-gong-transcript-fetcher` | Louise | Fetches Gong call transcripts by customer name via Raven and saves as local markdown |
 | `louise-transcript-extractor` | Louise | Extracts actionable intelligence from discovery calls and customer meetings |
 | `louise-call-summary-generator` | Louise | Structured call summaries: TL;DR, decisions, action items, key points, next steps |
 
