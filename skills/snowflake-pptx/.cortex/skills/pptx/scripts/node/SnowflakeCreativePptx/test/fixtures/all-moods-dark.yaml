@@ -1,0 +1,59 @@
+mood: "dark and premium"
+slides:
+  - layout: title
+    title: "Dark Premium Theme"
+    subtitle: "Test Presenter | Snowflake | March 2026"
+
+  - layout: agenda
+    title: "Agenda"
+    items:
+      - "Platform Overview"
+      - "Architecture Deep-Dive"
+      - "Customer Results"
+      - "Next Steps"
+
+  - layout: section
+    title: "Platform Overview"
+    subtitle: "The Data Cloud"
+    variant: diagonal
+
+  - layout: columns
+    columns: 3
+    title: "Core Capabilities"
+    accent_color: snowflakeBlue
+    items:
+      - icon: "data-engineering.svg"
+        heading: "Ingest"
+        body: "Real-time data pipelines"
+      - icon: "analytics.svg"
+        heading: "Transform"
+        body: "SQL-native processing"
+      - icon: "secure-data.svg"
+        heading: "Govern"
+        body: "Enterprise security"
+
+  - layout: stat-grid
+    title: "By the Numbers"
+    accent_color: starBlue
+    stats:
+      - number: "9K+"
+        label: "Customers"
+      - number: "$2B+"
+        label: "Revenue"
+      - number: "99.9%"
+        label: "SLA"
+
+  - layout: quote
+    quote: "The data cloud is the future of enterprise analytics."
+    attribution: "CTO, Fortune 500 Company"
+    background: dark
+
+  - layout: full-bleed
+    image: "background_background_blue_gradient_abstract.jpg"
+    overlay: dark
+    quote: "Transforming data into decisions"
+    attribution: "Snowflake"
+
+  - layout: thank-you
+    title: "Thank You"
+    subtitle: "questions@snowflake.com"

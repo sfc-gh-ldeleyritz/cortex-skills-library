@@ -1,0 +1,209 @@
+{
+  "effective_date": "2026-01-13",
+  "source": "Snowflake Service Consumption Table - Tables 6(a-i)",
+  "description": "Complete Snowflake AI Features Pricing",
+  
+  "cortex_complete": {
+    "description": "Table 6(a) - Cortex AI Functions (Credits per 1M Tokens)",
+    "data": [
+      {"model": "claude-3-5-sonnet", "input": 1.50, "output": 7.50},
+      {"model": "claude-3-7-sonnet", "input": 1.50, "output": 7.50},
+      {"model": "claude-4-sonnet", "input": 1.50, "output": 7.50},
+      {"model": "claude-4-opus", "input": 7.50, "output": 37.50, "preview": true},
+      {"model": "claude-haiku-4-5", "input": 0.55, "output": 2.75, "preview": true},
+      {"model": "claude-opus-4-5", "input": 2.75, "output": 13.75, "preview": true},
+      {"model": "claude-sonnet-4-5", "input": 1.65, "output": 8.25},
+      {"model": "deepseek-r1", "input": 0.68, "output": 2.70},
+      {"model": "gemini-2-5-flash", "input": 0.15, "output": 1.25, "preview": true},
+      {"model": "gemini-2-5-flash-lite", "input": 0.05, "output": 0.20, "preview": true},
+      {"model": "gemini-3-pro", "input": 1.00, "output": 6.00, "preview": true},
+      {"model": "llama3.1-405b", "input": 1.20, "output": 1.20},
+      {"model": "llama3.1-70b", "input": 0.36, "output": 0.36},
+      {"model": "llama3.1-8b", "input": 0.11, "output": 0.11},
+      {"model": "llama3.3-70b", "input": 0.36, "output": 0.36},
+      {"model": "llama4-maverick", "input": 0.12, "output": 0.49},
+      {"model": "llama4-scout", "input": 0.09, "output": 0.33},
+      {"model": "mistral-large2", "input": 1.00, "output": 3.00},
+      {"model": "mistral-7b", "input": 0.08, "output": 0.10},
+      {"model": "mixtral-8x7b", "input": 0.23, "output": 0.35},
+      {"model": "openai-gpt-4.1", "input": 1.00, "output": 4.00},
+      {"model": "openai-gpt-5", "input": 0.69, "output": 5.50, "preview": true},
+      {"model": "openai-gpt-5-chat", "input": 0.63, "output": 5.00},
+      {"model": "openai-gpt-5-mini", "input": 0.14, "output": 1.10, "preview": true},
+      {"model": "openai-gpt-5-nano", "input": 0.03, "output": 0.22, "preview": true},
+      {"model": "openai-gpt-5.1", "input": 0.69, "output": 5.50, "preview": true},
+      {"model": "openai-gpt-5.2", "input": 0.97, "output": 7.70, "preview": true},
+      {"model": "openai-gpt-oss-120b", "input": 0.08, "output": 0.30, "preview": true},
+      {"model": "openai-gpt-oss-20b", "input": 0.04, "output": 0.15, "preview": true},
+      {"model": "openai-o4-mini", "input": 0.55, "output": 2.20, "preview": true},
+      {"model": "pixtral-large", "input": 1.00, "output": 3.00},
+      {"model": "snowflake-arctic", "input": 0.84, "output": 0.84},
+      {"model": "snowflake-llama-3.1-405b", "input": 0.96, "output": 0.96},
+      {"model": "snowflake-llama-3.3-70b", "input": 0.29, "output": 0.29}
+    ]
+  },
+
+  "rest_api_caching": {
+    "description": "Table 6(b) - REST API with Prompt Caching ($ per 1M Tokens)",
+    "data": [
+      {"model": "claude-3-7-sonnet", "input": 3.00, "output": 15.00, "cache_write": 3.75, "cache_read": 0.30},
+      {"model": "claude-4-opus", "input": 15.00, "output": 75.00, "cache_write": 18.75, "cache_read": 1.50, "preview": true},
+      {"model": "claude-4-sonnet", "input": 3.00, "output": 15.00, "cache_write": 3.75, "cache_read": 0.30},
+      {"model": "claude-4-5-sonnet", "input": 3.30, "output": 16.50, "cache_write": 4.13, "cache_read": 0.33},
+      {"model": "claude-haiku-4-5", "input": 1.10, "output": 5.50, "cache_write": 1.38, "cache_read": 0.11, "preview": true},
+      {"model": "claude-opus-4-5", "input": 5.50, "output": 27.50, "cache_write": 6.88, "cache_read": 0.55, "preview": true},
+      {"model": "openai-gpt-4.1", "input": 2.20, "output": 8.80, "cache_write": null, "cache_read": 0.55},
+      {"model": "openai-gpt-5", "input": 1.38, "output": 11.00, "cache_write": null, "cache_read": 0.14, "preview": true},
+      {"model": "openai-gpt-5.2", "input": 1.93, "output": 15.40, "cache_write": null, "cache_read": 0.19, "preview": true},
+      {"model": "openai-o4-mini", "input": 1.10, "output": 4.40, "cache_write": null, "cache_read": 0.28}
+    ]
+  },
+
+  "rest_api_standard": {
+    "description": "Table 6(c) - REST API Standard ($ per 1M Tokens)",
+    "data": [
+      {"model": "claude-3-5-sonnet", "input": 3.00, "output": 15.00},
+      {"model": "deepseek-r1", "input": 1.35, "output": 5.40},
+      {"model": "llama3.1-405b", "input": 2.40, "output": 2.40},
+      {"model": "llama3.1-70b", "input": 0.72, "output": 0.72},
+      {"model": "llama3.1-8b", "input": 0.22, "output": 0.22},
+      {"model": "llama3.2-1b", "input": 0.10, "output": 0.10},
+      {"model": "llama3.2-3b", "input": 0.15, "output": 0.15},
+      {"model": "llama3.3-70b", "input": 0.72, "output": 0.72},
+      {"model": "llama4-maverick", "input": 0.24, "output": 0.97},
+      {"model": "mistral-large", "input": 4.00, "output": 12.00},
+      {"model": "mistral-large2", "input": 2.00, "output": 6.00},
+      {"model": "mistral-7b", "input": 0.15, "output": 0.20},
+      {"model": "openai-gpt-oss-120b", "input": 0.15, "output": 0.60, "preview": true},
+      {"model": "snowflake-llama-3.3-70b", "input": 0.72, "output": 0.72}
+    ]
+  },
+
+  "snowflake_intelligence": {
+    "description": "Table 6(d) - Snowflake Intelligence (Credits per 1M Tokens)",
+    "data": [
+      {"model": "claude-3-5-sonnet", "input": 2.51, "output": 12.55, "cache_write": null, "cache_read": null},
+      {"model": "claude-3-7-sonnet", "input": 2.51, "output": 12.55, "cache_write": 3.14, "cache_read": 0.25},
+      {"model": "claude-4-sonnet", "input": 2.51, "output": 12.55, "cache_write": 3.14, "cache_read": 0.25},
+      {"model": "claude-haiku-4-5", "input": 0.92, "output": 4.60, "cache_write": 1.15, "cache_read": 0.09, "preview": true},
+      {"model": "claude-4-5-sonnet", "input": 2.76, "output": 13.81, "cache_write": 3.45, "cache_read": 0.28},
+      {"model": "openai-gpt-4.1", "input": 1.64, "output": 7.36, "cache_write": null, "cache_read": 0.46},
+      {"model": "openai-gpt-5", "input": 1.15, "output": 9.21, "cache_write": null, "cache_read": 0.12, "preview": true}
+    ]
+  },
+
+  "cortex_agents": {
+    "description": "Table 6(e) - Cortex Agents (Credits per 1M Tokens)",
+    "data": [
+      {"model": "claude-3-5-sonnet", "input": 1.88, "output": 9.41, "cache_write": null, "cache_read": null},
+      {"model": "claude-3-7-sonnet", "input": 1.88, "output": 9.41, "cache_write": 2.35, "cache_read": 0.19},
+      {"model": "claude-4-sonnet", "input": 1.88, "output": 9.41, "cache_write": 2.35, "cache_read": 0.19},
+      {"model": "claude-haiku-4-5", "input": 0.69, "output": 3.45, "cache_write": 0.87, "cache_read": 0.07, "preview": true},
+      {"model": "claude-4-5-sonnet", "input": 2.07, "output": 10.36, "cache_write": 2.59, "cache_read": 0.21},
+      {"model": "openai-gpt-4.1", "input": 1.38, "output": 5.52, "cache_write": null, "cache_read": 0.35},
+      {"model": "openai-gpt-5", "input": 0.86, "output": 6.90, "cache_write": null, "cache_read": 0.09, "preview": true}
+    ]
+  },
+
+  "cortex_analyst": {
+    "description": "Table 6(f) - Cortex Analyst via Intelligence/Agents (Credits per 1M Tokens)",
+    "data": [
+      {"model": "claude-3-5-sonnet", "input": 3.14, "output": 15.69},
+      {"model": "claude-3-7-sonnet", "input": 3.14, "output": 15.69},
+      {"model": "claude-4-sonnet", "input": 3.14, "output": 15.69},
+      {"model": "claude-haiku-4-5", "input": 1.15, "output": 5.75, "preview": true},
+      {"model": "claude-4-5-sonnet", "input": 3.45, "output": 17.26},
+      {"model": "mistral-large2", "input": 2.09, "output": 6.28},
+      {"model": "openai-gpt-4.1", "input": 2.30, "output": 9.21},
+      {"model": "openai-gpt-5", "input": 1.44, "output": 11.51, "preview": true}
+    ]
+  },
+
+  "fine_tuning": {
+    "description": "Table 6(g) - Fine-tuning (Credits per 1M Tokens) - Preview",
+    "data": [
+      {"model": "llama3.1-70b", "training": 3.40, "inference": 2.42},
+      {"model": "llama3.1-8b", "training": 0.64, "inference": 0.38},
+      {"model": "mistral-7b", "training": 0.64, "inference": 0.24},
+      {"model": "mistral-8x7b", "training": 3.40, "inference": 0.44},
+      {"model": "llama3-70b", "training": 3.40, "inference": 2.42, "legacy": true},
+      {"model": "llama3-8b", "training": 0.64, "inference": 0.38, "legacy": true}
+    ]
+  },
+
+  "other_ai_features": {
+    "description": "Table 6(h) - Other AI Features",
+    "data": [
+      {"feature": "AI Parse Document - Layout", "rate": 3.33, "unit": "Credits per 1,000 pages"},
+      {"feature": "AI Parse Document - OCR", "rate": 0.50, "unit": "Credits per 1,000 pages"},
+      {"feature": "Cortex Analyst (API)", "rate": 67.00, "unit": "Credits per 1,000 messages"},
+      {"feature": "Cortex Search", "rate": 6.30, "unit": "Credits per GB/mo indexed"},
+      {"feature": "Document AI", "rate": 8.00, "unit": "Credits per hour"}
+    ]
+  },
+
+  "provisioned_throughput": {
+    "description": "Table 6(i) - Provisioned Throughput",
+    "data": [
+      {"cloud": "AWS", "credits_per_ptu_hour": 0.08, "term_months": 1},
+      {"cloud": "Azure", "credits_per_ptu_hour": 0.10, "term_months": 1}
+    ],
+    "notes": "Non-cancellable, non-transferable, non-refundable"
+  },
+
+  "utility_functions": {
+    "description": "AI Utility Functions (Credits per 1M Tokens)",
+    "data": [
+      {"function": "AI Sentiment", "rate": 1.60},
+      {"function": "AI_AGG", "rate": 1.60},
+      {"function": "AI_CLASSIFY", "rate": 1.39},
+      {"function": "AI_EXTRACT (arctic-extract)", "rate": 5.00},
+      {"function": "AI_FILTER", "rate": 1.39, "preview": true},
+      {"function": "AI_REDACT", "rate": 0.63},
+      {"function": "AI_SUMMARIZE_AGG", "rate": 1.60, "preview": true},
+      {"function": "AI_TRANSCRIBE", "rate": 1.30},
+      {"function": "AI_TRANSLATE", "rate": 1.50},
+      {"function": "Entity Sentiment", "rate": 1.60},
+      {"function": "Extract Answer", "rate": 0.08},
+      {"function": "Guard", "rate": 0.25},
+      {"function": "Sentiment", "rate": 0.08},
+      {"function": "Summarize", "rate": 0.10},
+      {"function": "Translate", "rate": 1.50}
+    ]
+  },
+
+  "embedding_models": {
+    "description": "AI Embed Functions (Credits per 1M Tokens)",
+    "data": [
+      {"model": "voyage-multimodal-3", "dimensions": 1024, "rate": 0.06, "type": "image"},
+      {"model": "multilingual-e5-large", "dimensions": 1024, "rate": 0.05, "type": "text"},
+      {"model": "nv-embed-qa-4", "dimensions": 1024, "rate": 0.05, "type": "text"},
+      {"model": "snowflake-arctic-embed-l-v2.0", "dimensions": 1024, "rate": 0.05, "type": "text"},
+      {"model": "voyage-multilingual-2", "dimensions": 1024, "rate": 0.07, "type": "text"},
+      {"model": "e5-base-v2", "dimensions": 768, "rate": 0.03, "type": "text"},
+      {"model": "snowflake-arctic-embed-m", "dimensions": 768, "rate": 0.03, "type": "text"},
+      {"model": "snowflake-arctic-embed-m-v1.5", "dimensions": 768, "rate": 0.03, "type": "text"}
+    ]
+  },
+
+  "legacy_models": {
+    "description": "Legacy Cortex Models (Credits per 1M Tokens)",
+    "data": [
+      {"model": "gemma-7b", "rate": 0.12},
+      {"model": "jamba-instruct", "rate": 0.83},
+      {"model": "jamba-1.5-large", "rate": 1.40},
+      {"model": "jamba-1.5-mini", "rate": 0.10},
+      {"model": "llama2-70b-chat", "rate": 0.45},
+      {"model": "llama3-70b", "rate": 1.21},
+      {"model": "llama3-8b", "rate": 0.19},
+      {"model": "llama3.2-1b", "rate": 0.04},
+      {"model": "llama3.2-3b", "rate": 0.06},
+      {"model": "mistral-large", "rate": 5.10},
+      {"model": "reka-core", "rate": 5.50},
+      {"model": "reka-flash", "rate": 0.45},
+      {"model": "AI_EXTRACT (arctic-tilt-entity)", "rate": 9.50},
+      {"model": "AI_EXTRACT (arctic-tilt-table)", "rate": 28.40},
+      {"model": "Classify Text", "rate": 1.39}
+    ]
+  }
+}

@@ -1,0 +1,170 @@
+mood: "clean and minimal"
+slides:
+  - layout: title
+    title: "All Layouts Test"
+    subtitle: "Testing every layout type"
+  - layout: agenda
+    title: "Agenda"
+    items:
+      - "Section One"
+      - "Section Two"
+      - "Section Three"
+  - layout: section
+    title: "Section One"
+    subtitle: "Tagline for section one"
+  - layout: columns
+    columns: 3
+    title: "Three Columns"
+    subtitle: "With icons"
+    items:
+      - icon: "data-engineering.svg"
+        heading: "Ingest"
+        body: "Real-time pipelines"
+      - heading: "Transform"
+        body: "dbt-native transformations"
+      - heading: "Activate"
+        body: "Share data products"
+  - layout: stat-grid
+    title: "By the Numbers"
+    stats:
+      - number: "9,000+"
+        label: "Customers"
+      - number: "42%"
+        label: "Revenue growth"
+      - number: "99.9%"
+        label: "Uptime SLA"
+  - layout: quote
+    quote: "This is a test quote about Snowflake."
+    attribution: "Test Person | VP Engineering"
+    background: dark
+  - layout: split
+    title: "Split Slide"
+    subtitle: "Image on the left"
+    image: "background_background_blue_gradient_abstract.jpg"
+    image_position: left
+    bullets:
+      - "First bullet point"
+      - "Second bullet point"
+      - "Third bullet point"
+  - layout: full-bleed
+    image: "background_background_blue_gradient_abstract.jpg"
+    overlay: dark
+    quote: "Full bleed quote text."
+    attribution: "Attribution here"
+  - layout: table
+    title: "Comparison Table"
+    headers: ["Feature", "Legacy", "Snowflake"]
+    rows:
+      - ["Real-time ingest", "No", "Yes"]
+      - ["Zero-copy sharing", "No", "Yes"]
+  - layout: free
+    elements:
+      - type: text
+        value: "Custom free-form text"
+        options:
+          x: 1
+          y: 2
+          w: 8
+          h: 1
+          fontSize: 24
+          color: "29B5E8"
+  - layout: section
+    title: "Diagonal Section"
+    subtitle: "Variant demo"
+    variant: diagonal
+  - layout: section
+    title: "Side Panel Section"
+    variant: side-panel
+    accent_color: purpleMoon
+  - layout: columns
+    columns: 3
+    title: "Numbered Columns"
+    variant: numbered
+    items:
+      - heading: "Step One"
+        body: "Description of step one"
+      - heading: "Step Two"
+        body: "Description of step two"
+      - heading: "Step Three"
+        body: "Description of step three"
+  - layout: columns
+    columns: 2
+    title: "Card Columns"
+    variant: cards
+    accent_color: firstLight
+    items:
+      - heading: "Option A"
+        body: "Benefits of option A"
+      - heading: "Option B"
+        body: "Benefits of option B"
+  - layout: columns
+    columns: 2
+    title: "Bordered Columns"
+    variant: bordered
+    items:
+      - heading: "Workload 1"
+        body: "Data engineering pipelines"
+      - heading: "Workload 2"
+        body: "Data science and ML"
+  - layout: stat-grid
+    title: "Stats Accent BG"
+    variant: accent-bg
+    accent_color: valenciaOrange
+    stats:
+      - number: "3x"
+        label: "Faster queries"
+      - number: "50%"
+        label: "Cost reduction"
+  - layout: stat-grid
+    title: "Stats Inline"
+    variant: inline
+    stats:
+      - number: "9K+"
+        label: "Customers"
+      - number: "42%"
+        label: "Growth"
+      - number: "99.9%"
+        label: "Uptime"
+  - layout: timeline
+    title: "Journey"
+    accent_color: starBlue
+    steps:
+      - number: "1"
+        heading: "Discover"
+        body: "Understand the problem"
+      - number: "2"
+        heading: "Design"
+        body: "Build the solution"
+      - number: "3"
+        heading: "Deliver"
+        body: "Ship and iterate"
+  - layout: icon-grid
+    title: "Feature Grid"
+    accent_color: purpleMoon
+    items:
+      - heading: "Data Engineering"
+        body: "Build reliable pipelines"
+      - heading: "Data Science"
+        body: "Train models at scale"
+      - heading: "Data Sharing"
+        body: "Zero-copy collaboration"
+      - heading: "Governance"
+        body: "Unified policy engine"
+  - layout: comparison
+    title: "Before vs After"
+    accent_color: snowflakeBlue
+    left:
+      heading: "Legacy Approach"
+      bullets:
+        - "Manual ETL jobs"
+        - "Siloed data stores"
+        - "High maintenance cost"
+    right:
+      heading: "With Snowflake"
+      bullets:
+        - "Automated pipelines"
+        - "Unified data cloud"
+        - "Pay per second"
+  - layout: thank-you
+    title: "Thank You"
+    subtitle: "contact@snowflake.com"

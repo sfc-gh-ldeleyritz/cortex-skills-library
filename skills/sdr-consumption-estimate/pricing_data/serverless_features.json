@@ -1,0 +1,24 @@
+{
+  "effective_date": "2026-01-13",
+  "source": "Snowflake Service Consumption Table",
+  "description": "Serverless Feature Multipliers and Unit Charges",
+  "data": [
+    {"feature": "Serverless Tasks", "compute_multiplier": 0.90, "cloud_services_multiplier": 1.00, "unit_charge": null, "unit_description": null},
+    {"feature": "Serverless Tasks Flex", "compute_multiplier": 0.50, "cloud_services_multiplier": 1.00, "unit_charge": null, "unit_description": null},
+    {"feature": "Serverless Alerts", "compute_multiplier": 0.90, "cloud_services_multiplier": 1.00, "unit_charge": null, "unit_description": null},
+    {"feature": "Query Acceleration", "compute_multiplier": 1.00, "cloud_services_multiplier": null, "unit_charge": null, "unit_description": null},
+    {"feature": "Clustered Tables", "compute_multiplier": 2.00, "cloud_services_multiplier": 1.00, "unit_charge": null, "unit_description": null},
+    {"feature": "Materialized Views", "compute_multiplier": 2.00, "cloud_services_multiplier": 1.00, "unit_charge": null, "unit_description": null},
+    {"feature": "Search Optimization", "compute_multiplier": 2.00, "cloud_services_multiplier": 1.00, "unit_charge": null, "unit_description": null},
+    {"feature": "Replication", "compute_multiplier": 2.00, "cloud_services_multiplier": 0.35, "unit_charge": null, "unit_description": null},
+    {"feature": "Backup", "compute_multiplier": 2.00, "cloud_services_multiplier": 1.00, "unit_charge": null, "unit_description": null},
+    {"feature": "Data Quality Monitoring", "compute_multiplier": 2.00, "cloud_services_multiplier": 1.00, "unit_charge": null, "unit_description": null},
+    {"feature": "Table Optimization", "compute_multiplier": 0.75, "cloud_services_multiplier": 1.00, "unit_charge": null, "unit_description": null},
+    {"feature": "Trust Center", "compute_multiplier": 1.00, "cloud_services_multiplier": 1.00, "unit_charge": null, "unit_description": null},
+    {"feature": "Automated Refresh", "compute_multiplier": 1.25, "cloud_services_multiplier": null, "unit_charge": 0.06, "unit_description": "Credits per 1000 files"},
+    {"feature": "Snowpipe", "compute_multiplier": null, "cloud_services_multiplier": null, "unit_charge": 0.0037, "unit_description": "Credits per GB"},
+    {"feature": "Snowpipe Streaming", "compute_multiplier": null, "cloud_services_multiplier": null, "unit_charge": 0.0037, "unit_description": "Credits per uncompressed GB"},
+    {"feature": "Telemetry Data Ingest", "compute_multiplier": null, "cloud_services_multiplier": null, "unit_charge": 0.0212, "unit_description": "Credits per GB"},
+    {"feature": "Open Catalog", "compute_multiplier": null, "cloud_services_multiplier": null, "unit_charge": 0.50, "unit_description": "Credits per 1M requests"}
+  ]
+}

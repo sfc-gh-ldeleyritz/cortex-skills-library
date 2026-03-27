@@ -1,0 +1,57 @@
+{
+  "effective_date": "2026-01-13",
+  "source": "Snowflake Service Consumption Table - Tables 3(a-f)",
+  "description": "Storage Pricing ($/TB/Month)",
+  "on_demand_storage": {
+    "description": "Table 3(a) - Standard storage pricing by region",
+    "data": [
+      {"cloud": "AWS", "region": "US East (Northern Virginia)", "storage": 23.00, "time_travel": 23.00, "failsafe": 23.00},
+      {"cloud": "AWS", "region": "US West (Oregon)", "storage": 23.00, "time_travel": 23.00, "failsafe": 23.00},
+      {"cloud": "AWS", "region": "US East 2 (Ohio)", "storage": 23.00, "time_travel": 23.00, "failsafe": 23.00},
+      {"cloud": "AWS", "region": "EU Dublin", "storage": 25.00, "time_travel": 25.00, "failsafe": 25.00},
+      {"cloud": "AWS", "region": "EU Frankfurt", "storage": 27.00, "time_travel": 27.00, "failsafe": 27.00},
+      {"cloud": "AWS", "region": "AP Sydney", "storage": 28.00, "time_travel": 28.00, "failsafe": 28.00},
+      {"cloud": "AWS", "region": "AP Singapore", "storage": 28.00, "time_travel": 28.00, "failsafe": 28.00},
+      {"cloud": "AWS", "region": "AP Tokyo", "storage": 29.00, "time_travel": 29.00, "failsafe": 29.00},
+      {"cloud": "Azure", "region": "East US 2 (Virginia)", "storage": 23.00, "time_travel": 23.00, "failsafe": 23.00},
+      {"cloud": "Azure", "region": "West Europe (Netherlands)", "storage": 26.00, "time_travel": 26.00, "failsafe": 26.00},
+      {"cloud": "GCP", "region": "US Central 1 (Iowa)", "storage": 23.00, "time_travel": 23.00, "failsafe": 23.00}
+    ]
+  },
+  "spcs_block_storage": {
+    "description": "Table 3(c) - SPCS Block Storage",
+    "data": [
+      {"cloud": "AWS", "region": "US East (Northern Virginia)", "volume_tb_mo": 81.92, "iops_1000_mo": 5.00, "throughput_gb_sec_mo": 40.96, "snapshot_tb_mo": 51.20},
+      {"cloud": "AWS", "region": "EU Frankfurt", "volume_tb_mo": 97.49, "iops_1000_mo": 6.00, "throughput_gb_sec_mo": 48.75, "snapshot_tb_mo": 55.30},
+      {"cloud": "Azure", "region": "East US 2 (Virginia)", "volume_tb_mo": 82.23, "iops_1000_mo": 5.11, "throughput_gb_sec_mo": 41.12, "snapshot_tb_mo": 51.20},
+      {"cloud": "GCP", "region": "US Central 1 (Iowa)", "instance": "CPU", "volume_tb_mo": 81.92, "iops_1000_mo": 5.00, "throughput_gb_sec_mo": 40.96, "snapshot_tb_mo": 51.20},
+      {"cloud": "GCP", "region": "US Central 1 (Iowa)", "instance": "GPU", "volume_tb_mo": 81.92, "iops_1000_mo": null, "throughput_gb_sec_mo": 122.88, "snapshot_tb_mo": 51.20}
+    ]
+  },
+  "archive_storage": {
+    "description": "Table 3(e) - Archive Storage (Preview)",
+    "cool_tier": {
+      "storage_range": "$4.00 - $8.30 per TB/mo",
+      "retrieval": "$30.00 per TB processed"
+    },
+    "cold_tier": {
+      "storage_range": "$1.00 - $1.40 per TB/mo",
+      "retrieval_range": "$2.50 - $8.00 per TB processed"
+    }
+  },
+  "postgres_storage": {
+    "description": "Table 3(f) - Postgres Storage (Preview)",
+    "data": [
+      {"cloud": "AWS", "region": "US East (Northern Virginia)", "standard": 117.76, "high_availability": 235.52},
+      {"cloud": "AWS", "region": "US West (Oregon)", "standard": 117.76, "high_availability": 235.52},
+      {"cloud": "AWS", "region": "EU Dublin", "standard": 129.55, "high_availability": 259.10},
+      {"cloud": "AWS", "region": "EU Frankfurt", "standard": 140.15, "high_availability": 280.30},
+      {"cloud": "Azure", "region": "East US 2 (Virginia)", "standard": 118.21, "high_availability": 236.42}
+    ]
+  },
+  "eco_cache": {
+    "description": "Table 3(d) - Egress Cost Optimizer",
+    "cloudflare_cache": 16.90,
+    "unit": "$/TB/mo"
+  }
+}

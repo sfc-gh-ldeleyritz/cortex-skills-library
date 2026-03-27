@@ -1,0 +1,79 @@
+mood: "clean and minimal"
+slides:
+  - layout: title
+    title: "Images and Icons Test"
+    subtitle: "SVG and JPG asset rendering verification"
+
+  - layout: split
+    title: "Split with JPG Left"
+    subtitle: "Image on the left side"
+    image: "background_background_blue_gradient_abstract.jpg"
+    image_position: left
+    bullets:
+      - "First point about the image"
+      - "Second point with detail"
+      - "Third supporting point"
+
+  - layout: split
+    title: "Split with JPG Right"
+    subtitle: "Image on the right side"
+    image: "photo_asset_product_build_bench_of_developers.jpg"
+    image_position: right
+    accent_color: starBlue
+    bullets:
+      - "Developer collaboration"
+      - "Pair programming workflows"
+      - "Code review best practices"
+
+  - layout: full-bleed
+    image: "background_background_blue_fiber_data_abstract.jpg"
+    overlay: dark
+    quote: "Data is the new currency of business"
+    attribution: "Industry Leader"
+
+  - layout: full-bleed
+    image: "background_background_blue_gradient_abstract.jpg"
+    overlay: light
+    quote: "Innovation starts with clean data"
+
+  - layout: columns
+    columns: 3
+    title: "SVG Icon Columns"
+    subtitle: "Three different SVG icons"
+    items:
+      - icon: "data-engineering.svg"
+        heading: "Engineering"
+        body: "Pipeline development"
+      - icon: "analytics.svg"
+        heading: "Analytics"
+        body: "Business intelligence"
+      - icon: "secure-data.svg"
+        heading: "Security"
+        body: "Data protection"
+
+  - layout: icon-grid
+    title: "Icon Grid with SVGs"
+    accent_color: valenciaOrange
+    items:
+      - icon: "cloud.svg"
+        heading: "Cloud Native"
+        body: "Built for the cloud"
+      - icon: "connected.svg"
+        heading: "Connected"
+        body: "Seamless integration"
+      - icon: "data-engineering.svg"
+        heading: "Engineering"
+        body: "Reliable pipelines"
+      - icon: "analytics.svg"
+        heading: "Analytics"
+        body: "Instant insights"
+      - icon: "secure-data.svg"
+        heading: "Governance"
+        body: "Unified policies"
+      - icon: "ai.svg"
+        heading: "AI/ML"
+        body: "Native ML support"
+
+  - layout: thank-you
+    title: "Thank You"
+    subtitle: "assets@snowflake.com"

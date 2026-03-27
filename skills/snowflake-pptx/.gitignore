@@ -1,0 +1,78 @@
+docs/
+.DS_Store
+temp/*
+output/
+node_modules/
+.cortex/skills/pptx/scripts/snowflake/__pycache__/
+.cortex/skills/algorithmic-art/
+.cortex/skills/brand-guidelines/
+.cortex/skills/canvas-design/
+.cortex/skills/doc-coauthoring/
+.cortex/skills/docx/
+.cortex/skills/frontend-design/
+.cortex/skills/internal-comms/
+.cortex/skills/mcp-builder/
+.cortex/skills/pdf/
+.cortex/skills/skill-creator/
+.cortex/skills/slack-gif-creator/
+.cortex/skills/theme-factory/
+.cortex/skills/web-artifacts-builder/
+.cortex/skills/webapp-testing/
+.cortex/skills/xlsx/
+package-lock.json
+package.json
+!.cortex/skills/pptx/scripts/node/SnowflakeCreativePptx/package.json
+!.cortex/skills/pptx/scripts/node/SnowflakeCreativePptx/package-lock.json
+.pytest_cache
+__pycache__/
+.vscode
+snowflake-pptx-generator.sln
+tmp/
+.worktrees/
+
+# Dev-only — excluded from distribution
+.cortex/hooks/test_*.
+AGENTS.md
+.claude
+.superpowers/
+snowflake-pptx.sln
+
+# Build artifacts — keep bin/Release/ but exclude Debug and obj/
+.cortex/skills/pptx/scripts/dotnet/SnowflakePptx/bin/Debug/
+.cortex/skills/pptx/scripts/dotnet/SnowflakePptx/obj/
+
+# Internal planning docs — not for distribution
+docs/superpowers/
+
+# Dev tooling
+tools/
+
+# Test suites
+#tests/
+
+# Sample/demo files
+future_of_solution_engineering.*
+spcs_for_data_engineers*.pptx
+
+## [Unreleased] — 2026-03-20
+
+### Fixed — `title_headshot` presenter name, title, and company not populated
+
+- **Root cause**: `TemplateMappings.cs` was missing text patterns for `name`, `speaker_title`, and `company` in the `title_headshot` mapping. `HandleTitleHeadshotSlide` already handled replacement for these fields, but with no patterns defined it had nothing to match against, leaving "Firstname Lastname", "Title", "Company" as literal placeholder text.
+- **Fix**: Added three text patterns to the `title_headshot` SlideMapping: `["name"] = "Firstname Lastname"`, `["speaker_title"] = "Title"`, `["company"] = "Company"`. All three fields remain optional in the YAML spec; when absent, `DeleteUnfilledPlaceholders` removes the shapes.
+
+### Fixed — `four_column_numbers` content descriptions rendering at 9pt
+
+- **Root cause**: `ApplyFourColumnNumbersContentFontSize` had a font table with a 9pt floor for content exceeding 55 chars, making descriptions unreadable when text reached 56+ chars.
+- **Fix**: Replaced the font table to allow 2-line wrapping with a 10pt floor: <=25 chars -> 14pt, 26-40 -> 13pt, 41-55 -> 12pt, 56-70 -> 11pt, >70 -> 10pt. Updated `RunSizeOverrides` comment to document the new 10pt floor.
+
+### Added — `ApplyContentBulletFontScale` for content slide bullet overflow
+
+- **Problem**: Content slides with 5 long bullets (130-147 chars each) overflowed the body shape. `normAutofit` with its 75% floor was insufficient for total text volumes exceeding 600 chars.
+- **Fix**: Added `ApplyContentBulletFontScale` method in `ContentInjector.cs` that applies pre-emptive `fontScale` and `lnSpcReduction` to the body shape's `normAutofit` element based on total bullet character count: <=300 chars -> no override, 301-450 -> 85%/9999, 451-600 -> 75%/14999, >600 -> 65%/19999. Handles all three bullet forms (string, dict with "text" key, raw object). Called in `InjectContent` after `ApplyAutofitToAllShapes` and before `ApplyFontScaleOverrides`.
+
+### Changed — Skill docs updated for title_headshot fields and content limits
+
+- **`snowflake-pptx.md`**: Added `name`, `speaker_title`, `company`, `photo` field guidance for `title_headshot` slides. Tightened `col*_content` limit to "40-70 for `four_column_numbers`". Added note that 5+ bullets or bullets over 120 chars trigger automatic font scaling.
+- **`snowflake-template.md`**: Added `title_headshot` key fields row (`name`, `speaker_title`, `company`, `photo`). Updated `four_column_numbers` `col_content` limit. Added bullet font scaling note.
+/temp

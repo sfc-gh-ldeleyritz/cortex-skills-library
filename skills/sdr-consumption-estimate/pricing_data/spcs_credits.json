@@ -1,0 +1,26 @@
+{
+  "effective_date": "2026-01-13",
+  "source": "Snowflake Service Consumption Table",
+  "data": [
+    {"instance_category": "CPU", "instance_family": "CPU_X64_XS", "credits_per_hour": 0.06},
+    {"instance_category": "CPU", "instance_family": "CPU_X64_S", "credits_per_hour": 0.11},
+    {"instance_category": "CPU", "instance_family": "CPU_X64_M", "credits_per_hour": 0.22},
+    {"instance_category": "CPU", "instance_family": "CPU_X64_SL", "credits_per_hour": 0.41},
+    {"instance_category": "CPU", "instance_family": "CPU_X64_L", "credits_per_hour": 0.83},
+    {"instance_category": "HIGHMEM", "instance_family": "HIGHMEM_X64_S", "credits_per_hour": 0.28},
+    {"instance_category": "HIGHMEM", "instance_family": "HIGHMEM_X64_M", "credits_per_hour": 1.11},
+    {"instance_category": "HIGHMEM", "instance_family": "HIGHMEM_X64_SL", "credits_per_hour": 2.93},
+    {"instance_category": "HIGHMEM", "instance_family": "HIGHMEM_X64_L", "credits_per_hour": 4.44},
+    {"instance_category": "GPU", "instance_family": "GPU_NV_XS", "credits_per_hour": 0.25},
+    {"instance_category": "GPU", "instance_family": "GPU_GCP_NV_L4_1_24G", "credits_per_hour": 0.43},
+    {"instance_category": "GPU", "instance_family": "GPU_NV_S", "credits_per_hour": 0.57},
+    {"instance_category": "GPU", "instance_family": "GPU_NV_SM", "credits_per_hour": 1.70},
+    {"instance_category": "GPU", "instance_family": "GPU_GCP_NV_L4_4_24G", "credits_per_hour": 1.94},
+    {"instance_category": "GPU", "instance_family": "GPU_NV_M", "credits_per_hour": 2.68},
+    {"instance_category": "GPU", "instance_family": "GPU_NV_2M", "credits_per_hour": 3.50},
+    {"instance_category": "GPU", "instance_family": "GPU_NV_3M", "credits_per_hour": 3.55},
+    {"instance_category": "GPU", "instance_family": "GPU_GCP_NV_A100_8_40G", "credits_per_hour": 11.68},
+    {"instance_category": "GPU", "instance_family": "GPU_NV_SL", "credits_per_hour": 13.50},
+    {"instance_category": "GPU", "instance_family": "GPU_NV_L", "credits_per_hour": 14.12}
+  ]
+}

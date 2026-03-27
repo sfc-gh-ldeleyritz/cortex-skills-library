@@ -1,0 +1,23 @@
+{
+  "effective_date": "2026-01-13",
+  "source": "Snowflake Service Consumption Table - Table 1(h)",
+  "description": "Snowflake Openflow Compute Pricing",
+  "data": [
+    {
+      "deployment_type": "BYOC Deployment",
+      "price": 0.0225,
+      "unit": "Credits per vCPU per Hour",
+      "notes": "Bring Your Own Cloud deployment"
+    },
+    {
+      "deployment_type": "Snowflake Deployment (SPCS)",
+      "price": null,
+      "unit": "See SPCS CPU pricing",
+      "notes": "Uses CPU_X64_S (0.11), CPU_X64_SL (0.41), CPU_X64_L (0.83) credits/hour"
+    }
+  ],
+  "billing_rules": {
+    "minimum_charge": "60 seconds",
+    "granularity": "per-second"
+  }
+}

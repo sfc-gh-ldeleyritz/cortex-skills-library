@@ -1,0 +1,13 @@
+{
+  "effective_date": "2026-01-13",
+  "source": "Snowflake Service Consumption Table - Table 1(c)",
+  "description": "Snowpark Optimized Warehouse Pricing (Credits/Hour)",
+  "data": [
+    {"resource_constraint": "MEMORY_1X", "XS": 1.00, "S": 2.00, "M": 4.00, "L": 8.00, "XL": 16.00, "2XL": 32.00, "3XL": 64.00, "4XL": 128.00, "5XL": null},
+    {"resource_constraint": "MEMORY_1X_x86", "XS": 1.10, "S": 2.20, "M": 4.40, "L": 8.80, "XL": 17.60, "2XL": 35.20, "3XL": 70.40, "4XL": 140.80, "5XL": null},
+    {"resource_constraint": "MEMORY_16X", "XS": null, "S": null, "M": 6.00, "L": 12.00, "XL": 24.00, "2XL": 48.00, "3XL": 96.00, "4XL": 192.00, "5XL": 384.00},
+    {"resource_constraint": "MEMORY_16X_x86", "XS": null, "S": null, "M": 6.25, "L": 12.50, "XL": 25.00, "2XL": 50.00, "3XL": 100.00, "4XL": 200.00, "5XL": null},
+    {"resource_constraint": "MEMORY_64X", "XS": null, "S": null, "M": null, "L": 15.00, "XL": 30.00, "2XL": 60.00, "3XL": 120.00, "4XL": 240.00, "5XL": null, "notes": "Preview"},
+    {"resource_constraint": "MEMORY_64X_x86", "XS": null, "S": null, "M": null, "L": 16.00, "XL": 32.00, "2XL": 64.00, "3XL": 128.00, "4XL": 256.00, "5XL": null, "notes": "Preview"}
+  ]
+}

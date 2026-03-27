@@ -1,0 +1,30 @@
+mood: "clean and minimal"
+slides:
+  - layout: title
+    title: "Test Deck"
+    subtitle: "Subtitle here"
+  - layout: agenda
+    title: "Agenda"
+    items:
+      - "Introduction"
+      - "Main Content"
+  - layout: columns
+    columns: 2
+    title: "Two Columns"
+    items:
+      - heading: "Left"
+        body: "Left body text"
+      - heading: "Right"
+        body: "Right body text"
+  - layout: stat-grid
+    title: "Stats"
+    stats:
+      - number: "99%"
+        label: "Uptime"
+      - number: "10x"
+        label: "Faster"
+  - layout: quote
+    quote: "This is a test quote."
+    attribution: "Test Person | Title"
+  - layout: thank-you
+    title: "Thank You"

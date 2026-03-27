@@ -1,0 +1,14 @@
+{
+  "name": "snowflake-creative-pptx",
+  "version": "1.0.0",
+  "description": "Snowflake creative PPTX generator using pptxgenjs",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "node test/run-tests.js"
+  },
+  "dependencies": {
+    "js-yaml": "^4.1.0",
+    "pptxgenjs": "^4.0.1"
+  }
+}

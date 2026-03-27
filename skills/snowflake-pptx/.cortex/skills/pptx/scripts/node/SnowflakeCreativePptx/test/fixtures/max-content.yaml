@@ -1,0 +1,119 @@
+mood: "clean and minimal"
+slides:
+  - layout: title
+    title: "Maximum Content Boundary Test for All Layout Fields"
+    subtitle: "Verifying that content at character limits renders without overflow or truncation errors"
+
+  - layout: agenda
+    title: "Agenda for Max Content Test Across All Available Layouts"
+    items:
+      - "Section one: column layouts with maximum character content for each field"
+      - "Section two: stat-grid layouts testing number and label field boundaries"
+      - "Section three: quote layout with maximum quote text and attribution fields"
+      - "Section four: timeline layout with maximum step heading and body content"
+      - "Section five: icon-grid layout with maximum heading and body field lengths"
+      - "Section six: comparison layout with maximum bullet content per panel side"
+
+  - layout: columns
+    columns: 1
+    title: "Single Column at Maximum Content Length for Title Field Testing"
+    subtitle: "This subtitle is designed to test the maximum allowed character count for subtitle fields in the spec"
+    items:
+      - heading: "This heading tests the forty char max"
+        body: "This body text is designed to reach approximately the maximum character limit that the validator allows for column body text in the creative spec layout"
+    notes: "These speaker notes are designed to test the maximum notes field length. In a real presentation, speaker notes should contain detailed talking points, delivery guidance, transition cues, and source references. The goal is to provide enough content that the presenter can speak confidently for 2-3 minutes per slide without reading directly from the slides. Good speaker notes include specific data points, anecdotes, and questions to engage the audience. They should also include references to source material so the presenter can answer follow-up questions. This particular slide tests the maximum notes length to ensure the PPTX generator handles long notes without truncation. The notes validator allows up to 4000 characters, and this block approaches that limit with substantive content rather than filler text. References: - [Snowflake Documentation]: docs.snowflake.com - [Best Practices Guide]: snowflake.com/guides - [Architecture Overview]: docs.snowflake.com/en/user-guide/intro-key-concepts - [Performance Tuning]: community.snowflake.com"
+
+  - layout: stat-grid
+    title: "Stats at Maximum Number and Label Field Character Counts"
+    subtitle: "Verifying large numbers and long labels render correctly within stat card boundaries"
+    stats:
+      - number: "$12.9M/yr"
+        label: "Average annual cost of poor data quality"
+      - number: "1,000,000"
+        label: "Queries processed per hour at peak load"
+      - number: "99.999%"
+        label: "Platform availability service agreement"
+      - number: "$2.07B"
+        label: "Annual product revenue run rate growth"
+
+  - layout: quote
+    quote: "Snowflake has fundamentally transformed how our organization approaches data management, analytics, and machine learning across every business unit and geographic region we operate in globally."
+    attribution: "Chief Data Officer | Global Fortune 500 Enterprise Corporation"
+
+  - layout: timeline
+    title: "Maximum Content Timeline with Five Steps at Field Limits"
+    accent_color: starBlue
+    steps:
+      - number: "1"
+        heading: "Discovery and Assessment Phase"
+        body: "Comprehensive evaluation of current data infrastructure, identifying gaps and opportunities for modernization"
+      - number: "2"
+        heading: "Architecture Design and Planning"
+        body: "Designing the target state architecture including compute, storage, governance, and integration patterns"
+      - number: "3"
+        heading: "Implementation and Migration Work"
+        body: "Executing the migration plan with parallel workstreams for data movement, transformation, and validation"
+      - number: "4"
+        heading: "Testing Validation and QA Phase"
+        body: "End-to-end testing of all data pipelines, analytics workloads, and governance policies before cutover"
+      - number: "5"
+        heading: "Production Launch and Optimize"
+        body: "Go-live with production workloads followed by performance tuning and cost optimization activities"
+
+  - layout: icon-grid
+    title: "Platform Capabilities Grid with Maximum Content Fields"
+    accent_color: purpleMoon
+    items:
+      - icon: "data-engineering.svg"
+        heading: "Data Engineering and Pipelines"
+        body: "Build and orchestrate reliable data pipelines at any scale using SQL or Python"
+      - icon: "analytics.svg"
+        heading: "Analytics and Business Intel"
+        body: "Interactive SQL analytics with automatic query optimization and caching"
+      - icon: "secure-data.svg"
+        heading: "Security and Governance Layer"
+        body: "Unified security policies with fine-grained access control and auditing"
+      - icon: "cloud.svg"
+        heading: "Cloud Native Architecture"
+        body: "Multi-cloud deployment across AWS, Azure, and GCP with auto-replication"
+      - icon: "connected.svg"
+        heading: "Integration and Connectivity"
+        body: "Connect to 1000+ tools and services with native connectors and drivers"
+      - icon: "ai.svg"
+        heading: "Machine Learning and AI"
+        body: "Train and deploy ML models natively with GPU-accelerated compute pools"
+
+  - layout: comparison
+    title: "Full Comparison with Maximum Bullets Per Panel Side"
+    accent_color: valenciaOrange
+    left:
+      heading: "Traditional Data Warehouse"
+      bullets:
+        - "Fixed capacity requiring manual capacity planning and provisioning cycles"
+        - "Coupled compute and storage preventing independent scaling of resources"
+        - "Single cloud vendor lock-in limiting deployment flexibility"
+        - "Complex maintenance requiring dedicated database administration team"
+        - "Limited concurrency causing query queuing during peak usage periods"
+    right:
+      heading: "Snowflake Data Cloud Platform"
+      bullets:
+        - "Elastic auto-scaling that adjusts compute resources to match workload demand"
+        - "Separated compute and storage enabling independent scaling and optimization"
+        - "Multi-cloud native supporting AWS, Azure, and GCP from single platform"
+        - "Zero maintenance with automatic optimization, patching, and upgrades"
+        - "Unlimited concurrency through multi-cluster warehouse architecture design"
+
+  - layout: table
+    title: "Data Table with Maximum Columns and Row Content at Limits"
+    accent_color: firstLight
+    headers: ["Capability", "Standard Edition", "Enterprise Edition", "Business Critical"]
+    rows:
+      - ["Virtual warehouses", "Unlimited", "Unlimited", "Unlimited"]
+      - ["Time travel retention", "1 day", "Up to 90 days", "Up to 90 days"]
+      - ["Multi-cluster warehouse", "Yes", "Yes", "Yes"]
+      - ["Materialized views", "No", "Yes", "Yes"]
+      - ["Database failover", "No", "No", "Yes"]
+
+  - layout: thank-you
+    title: "Thank You"
+    subtitle: "max-content-test@snowflake.com"

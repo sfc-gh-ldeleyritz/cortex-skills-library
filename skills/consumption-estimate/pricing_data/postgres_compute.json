@@ -1,0 +1,32 @@
+{
+  "effective_date": "2026-01-13",
+  "source": "Snowflake Service Consumption Table - Table 1(i)",
+  "description": "Snowflake Postgres Compute Pricing (Preview)",
+  "billing_rules": {
+    "minimum_charge": "1 minute",
+    "granularity": "per-second"
+  },
+  "data": [
+    {"instance_family": "STANDARD_M", "aws": 0.0356, "azure": 0.0376, "aws_ha": 0.0712, "azure_ha": 0.0752},
+    {"instance_family": "STANDARD_L", "aws": 0.0712, "azure": 0.0752, "aws_ha": 0.1424, "azure_ha": 0.1504},
+    {"instance_family": "STANDARD_XL", "aws": 0.1424, "azure": 0.1504, "aws_ha": 0.2848, "azure_ha": 0.3008},
+    {"instance_family": "STANDARD_2X", "aws": 0.2848, "azure": 0.3008, "aws_ha": 0.5696, "azure_ha": 0.6016},
+    {"instance_family": "STANDARD_4XL", "aws": 0.5696, "azure": 0.6016, "aws_ha": 1.1392, "azure_ha": 1.2032},
+    {"instance_family": "STANDARD_8XL", "aws": 1.1392, "azure": 1.2032, "aws_ha": 2.2784, "azure_ha": 2.4064},
+    {"instance_family": "STANDARD_12XL", "aws": 1.7088, "azure": 1.8048, "aws_ha": 3.4176, "azure_ha": 3.6096},
+    {"instance_family": "STANDARD_24XL", "aws": 3.4176, "azure": 3.6096, "aws_ha": 6.8352, "azure_ha": 7.2192},
+    {"instance_family": "HIGHMEM_L", "aws": 0.1024, "azure": 0.1088, "aws_ha": 0.2048, "azure_ha": 0.2176},
+    {"instance_family": "HIGHMEM_XL", "aws": 0.2048, "azure": 0.2176, "aws_ha": 0.4096, "azure_ha": 0.4352},
+    {"instance_family": "HIGHMEM_2XL", "aws": 0.4096, "azure": 0.4352, "aws_ha": 0.8192, "azure_ha": 0.8704},
+    {"instance_family": "HIGHMEM_4XL", "aws": 0.8192, "azure": 0.8704, "aws_ha": 1.6384, "azure_ha": 1.7408},
+    {"instance_family": "HIGHMEM_8XL", "aws": 1.6384, "azure": 1.7408, "aws_ha": 3.2768, "azure_ha": 3.4816},
+    {"instance_family": "HIGHMEM_12XL", "aws": 2.4576, "azure": 2.6112, "aws_ha": 4.9152, "azure_ha": 5.2224},
+    {"instance_family": "HIGHMEM_16XL", "aws": 3.2768, "azure": 3.4816, "aws_ha": 6.5536, "azure_ha": 6.9632},
+    {"instance_family": "HIGHMEM_24XL", "aws": 4.9152, "azure": 5.2224, "aws_ha": 9.8304, "azure_ha": 10.4448},
+    {"instance_family": "HIGHMEM_32XL", "aws": 6.5536, "azure": 6.9632, "aws_ha": 13.1072, "azure_ha": 13.9264},
+    {"instance_family": "HIGHMEM_48XL", "aws": 9.8304, "azure": 10.4448, "aws_ha": 19.6608, "azure_ha": 20.8896},
+    {"instance_family": "BURST_XS", "aws": 0.0068, "azure": null, "aws_ha": 0.0136, "azure_ha": null},
+    {"instance_family": "BURST_S", "aws": 0.0136, "azure": 0.0144, "aws_ha": 0.0272, "azure_ha": 0.0288},
+    {"instance_family": "BURST_M", "aws": 0.0272, "azure": 0.0288, "aws_ha": 0.0544, "azure_ha": 0.0576}
+  ]
+}

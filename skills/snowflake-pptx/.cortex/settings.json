@@ -1,0 +1,42 @@
+{
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash -c \"python3 .cortex/hooks/snowflake-pptx-preflight.py 2>/dev/null || python .cortex/hooks/snowflake-pptx-preflight.py\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash -c \"python3 .cortex/hooks/yaml-emdash-check.py 2>/dev/null || python .cortex/hooks/yaml-emdash-check.py\"",
+            "timeout": 10
+          },
+          {
+            "type": "command",
+            "command": "bash -c \"python3 .cortex/hooks/yaml-slide-type-check.py 2>/dev/null || python .cortex/hooks/yaml-slide-type-check.py\"",
+            "timeout": 10
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash -c \"python3 .cortex/hooks/snowflake-pptx-postbuild.py 2>/dev/null || python .cortex/hooks/snowflake-pptx-postbuild.py\"",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  }
+}

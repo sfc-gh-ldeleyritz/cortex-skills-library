@@ -1,0 +1,111 @@
+mood: "clean and minimal"
+slides:
+  # --- section variants ---
+  - layout: section
+    title: "Default Section"
+    subtitle: "Standard section divider"
+
+  - layout: section
+    title: "Diagonal Section"
+    subtitle: "Angled shape variant"
+    variant: diagonal
+    accent_color: starBlue
+
+  - layout: section
+    title: "Side Panel Section"
+    subtitle: "Panel on the right"
+    variant: side-panel
+    accent_color: purpleMoon
+
+  # --- columns variants ---
+  - layout: columns
+    columns: 3
+    title: "Default Columns"
+    subtitle: "Standard column layout"
+    items:
+      - heading: "Alpha"
+        body: "Description of alpha"
+      - heading: "Beta"
+        body: "Description of beta"
+      - heading: "Gamma"
+        body: "Description of gamma"
+
+  - layout: columns
+    columns: 2
+    title: "Card Columns"
+    subtitle: "Cards with borders and shadows"
+    variant: cards
+    accent_color: valenciaOrange
+    items:
+      - heading: "Option A"
+        body: "Benefits of option A"
+      - heading: "Option B"
+        body: "Benefits of option B"
+
+  - layout: columns
+    columns: 3
+    title: "Numbered Columns"
+    subtitle: "Sequential step layout"
+    variant: numbered
+    accent_color: firstLight
+    items:
+      - heading: "Step One"
+        body: "Initial setup and configuration"
+      - heading: "Step Two"
+        body: "Data ingestion and transformation"
+      - heading: "Step Three"
+        body: "Analytics and reporting"
+
+  - layout: columns
+    columns: 2
+    title: "Bordered Columns"
+    subtitle: "Left-border accent columns"
+    variant: bordered
+    accent_color: starBlue
+    items:
+      - heading: "Workload A"
+        body: "Data engineering pipelines"
+      - heading: "Workload B"
+        body: "Machine learning training"
+
+  # --- stat-grid variants ---
+  - layout: stat-grid
+    title: "Default Stats"
+    subtitle: "Standard number display"
+    stats:
+      - number: "9,000+"
+        label: "Customers"
+      - number: "42%"
+        label: "Growth"
+      - number: "99.9%"
+        label: "Uptime"
+
+  - layout: stat-grid
+    title: "Accent Background Stats"
+    subtitle: "Colored background cards"
+    variant: accent-bg
+    accent_color: valenciaOrange
+    stats:
+      - number: "3x"
+        label: "Faster queries"
+      - number: "50%"
+        label: "Cost reduction"
+
+  - layout: stat-grid
+    title: "Inline Stats"
+    subtitle: "Compact inline display"
+    variant: inline
+    accent_color: purpleMoon
+    stats:
+      - number: "24/7"
+        label: "Support"
+      - number: "150ms"
+        label: "Latency"
+      - number: "10PB"
+        label: "Capacity"
+      - number: "5-9s"
+        label: "Availability"
+
+  - layout: thank-you
+    title: "Thank You"
+    subtitle: "contact@snowflake.com"

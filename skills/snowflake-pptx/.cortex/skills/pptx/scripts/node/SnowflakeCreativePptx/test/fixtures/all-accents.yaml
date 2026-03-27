@@ -1,0 +1,115 @@
+mood: "clean and minimal"
+slides:
+  - layout: title
+    title: "Accent Color Test"
+    subtitle: "All five Snowflake brand accent colors"
+
+  - layout: section
+    title: "Snowflake Blue Section"
+    subtitle: "Primary brand color"
+    accent_color: snowflakeBlue
+
+  - layout: columns
+    columns: 2
+    title: "Star Blue Columns"
+    accent_color: starBlue
+    variant: cards
+    items:
+      - heading: "Feature A"
+        body: "Described in star blue accent"
+      - heading: "Feature B"
+        body: "Also in star blue accent"
+
+  - layout: stat-grid
+    title: "Valencia Orange Stats"
+    accent_color: valenciaOrange
+    variant: accent-bg
+    stats:
+      - number: "10x"
+        label: "Performance"
+      - number: "50%"
+        label: "Cost savings"
+
+  - layout: section
+    title: "First Light Section"
+    subtitle: "Warm light accent"
+    accent_color: firstLight
+    variant: side-panel
+
+  - layout: comparison
+    title: "Purple Moon Comparison"
+    accent_color: purpleMoon
+    left:
+      heading: "Before"
+      bullets:
+        - "Legacy tools"
+        - "Manual processes"
+    right:
+      heading: "After"
+      bullets:
+        - "Modern platform"
+        - "Automated workflows"
+
+  - layout: columns
+    columns: 3
+    title: "Snowflake Blue Columns"
+    accent_color: snowflakeBlue
+    variant: numbered
+    items:
+      - heading: "Discover"
+        body: "Understand your data landscape"
+      - heading: "Design"
+        body: "Architect the solution"
+      - heading: "Deliver"
+        body: "Implement and scale"
+
+  - layout: stat-grid
+    title: "Star Blue Stats"
+    accent_color: starBlue
+    stats:
+      - number: "99.9%"
+        label: "Availability"
+      - number: "150ms"
+        label: "Median latency"
+      - number: "1000+"
+        label: "Integrations"
+
+  - layout: section
+    title: "Valencia Orange Divider"
+    subtitle: "Energy and urgency"
+    accent_color: valenciaOrange
+    variant: diagonal
+
+  - layout: timeline
+    title: "First Light Timeline"
+    accent_color: firstLight
+    steps:
+      - number: "1"
+        heading: "Assess"
+        body: "Evaluate current state"
+      - number: "2"
+        heading: "Plan"
+        body: "Design target architecture"
+      - number: "3"
+        heading: "Build"
+        body: "Implement the solution"
+      - number: "4"
+        heading: "Optimize"
+        body: "Tune and monitor"
+
+  - layout: icon-grid
+    title: "Purple Moon Grid"
+    accent_color: purpleMoon
+    items:
+      - heading: "Data Warehouse"
+        body: "Analytics at scale"
+      - heading: "Data Lake"
+        body: "Store any format"
+      - heading: "Data Share"
+        body: "Cross-cloud collaboration"
+      - heading: "Data Apps"
+        body: "Build on Snowflake"
+
+  - layout: thank-you
+    title: "Thank You"
+    subtitle: "accents@snowflake.com"

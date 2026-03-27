@@ -1,0 +1,9 @@
+{
+  "presenter_name": "Alex Ross",
+  "presenter_title": "Principal Solutions Engineer",
+  "presenter_headshot": "~/Pictures/headshot.jpg",
+  "company": "Snowflake",
+  "output_dir": "~/Documents/Decks",
+  "deck_length": "medium",
+  "safe_harbor": true
+}

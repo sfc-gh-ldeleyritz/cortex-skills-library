@@ -1,0 +1,55 @@
+{
+  "effective_date": "2026-01-13",
+  "source": "Snowflake Service Consumption Table - Tables 4(a-e)",
+  "description": "Data Transfer Pricing ($/TB)",
+  "aws_data_transfer": {
+    "description": "Table 4(a) - AWS regions",
+    "data": [
+      {"region": "US East (Northern Virginia)", "same_region": 0.00, "spcs_same_region": 3.07, "different_region": 20.00, "internet_other_cloud": 90.00},
+      {"region": "US West (Oregon)", "same_region": 0.00, "spcs_same_region": 3.07, "different_region": 20.00, "internet_other_cloud": 90.00},
+      {"region": "EU Dublin", "same_region": 0.00, "spcs_same_region": 3.07, "different_region": 20.00, "internet_other_cloud": 90.00},
+      {"region": "EU Frankfurt", "same_region": 0.00, "spcs_same_region": 3.07, "different_region": 20.00, "internet_other_cloud": 90.00},
+      {"region": "AP Sydney", "same_region": 0.00, "spcs_same_region": 3.07, "different_region": 140.00, "internet_other_cloud": 140.00},
+      {"region": "AP Singapore", "same_region": 0.00, "spcs_same_region": 3.07, "different_region": 90.00, "internet_other_cloud": 120.00},
+      {"region": "AP Tokyo", "same_region": 0.00, "spcs_same_region": 3.07, "different_region": 90.00, "internet_other_cloud": 114.00},
+      {"region": "Canada Central", "same_region": 0.00, "spcs_same_region": 3.07, "different_region": 20.00, "internet_other_cloud": 90.00},
+      {"region": "South America (São Paulo)", "same_region": 0.00, "spcs_same_region": 3.07, "different_region": 138.00, "internet_other_cloud": 150.00},
+      {"region": "US Gov West 1", "same_region": 0.00, "spcs_same_region": 7.17, "different_region": 30.00, "internet_other_cloud": 155.00}
+    ]
+  },
+  "azure_data_transfer": {
+    "description": "Table 4(b) - Azure regions",
+    "data": [
+      {"region": "East US 2 (Virginia)", "same_region": 0.00, "spcs_same_region": 0.00, "same_continent": 20.00, "different_continent": 50.00, "internet": 87.50},
+      {"region": "West US 2 (Washington)", "same_region": 0.00, "spcs_same_region": 0.00, "same_continent": 20.00, "different_continent": 50.00, "internet": 87.50},
+      {"region": "West Europe (Netherlands)", "same_region": 0.00, "spcs_same_region": 0.00, "same_continent": 20.00, "different_continent": 50.00, "internet": 87.50},
+      {"region": "Australia East", "same_region": 0.00, "spcs_same_region": 0.00, "same_continent": 80.00, "different_continent": 80.00, "internet": 120.00},
+      {"region": "Southeast Asia (Singapore)", "same_region": 0.00, "spcs_same_region": 0.00, "same_continent": 80.00, "different_continent": 80.00, "internet": 120.00}
+    ]
+  },
+  "gcp_data_transfer": {
+    "description": "Table 4(c) - GCP regions",
+    "same_cloud": [
+      {"region": "US Central 1 (Iowa)", "same_region": 0.00, "spcs_same_region": 6.22, "north_america": 20.00, "europe": 50.00, "asia": 80.00, "oceania": 100.00},
+      {"region": "Europe West 4 (Netherlands)", "same_region": 0.00, "spcs_same_region": 6.22, "north_america": 50.00, "europe": 20.00, "asia": 80.00, "oceania": 100.00}
+    ],
+    "to_internet": [
+      {"region": "US Central 1 (Iowa)", "north_america": 120.00, "europe": 120.00, "asia": 120.00, "australia_korea_sa_saudi": 190.00, "china": 230.00},
+      {"region": "Europe West 4 (Netherlands)", "north_america": 120.00, "europe": 120.00, "asia": 120.00, "australia_korea_sa_saudi": 190.00, "china": 230.00}
+    ]
+  },
+  "privatelink_pricing": {
+    "description": "Table 4(e) - Outbound Privatelink",
+    "private_endpoint_per_1000_hours": 10.00,
+    "data_processed_tiers": {
+      "first_1_pb": 10.24,
+      "next_4_pb": 6.14,
+      "over_5_pb": 4.09
+    },
+    "notes": "GCP has higher rates: $30.72/$26.62/$24.57 per TB"
+  },
+  "api_gateway_private_endpoints": {
+    "description": "Table 4(d)",
+    "price_per_tb": 10.00
+  }
+}

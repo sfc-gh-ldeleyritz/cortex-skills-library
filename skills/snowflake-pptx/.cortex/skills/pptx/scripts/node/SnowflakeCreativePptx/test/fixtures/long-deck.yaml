@@ -1,0 +1,193 @@
+mood: "dark and premium"
+slides:
+  - layout: title
+    title: "Snowflake Data Cloud"
+    subtitle: "Enterprise Platform Overview | March 2026"
+
+  - layout: agenda
+    title: "Agenda"
+    items:
+      - "The Data Challenge"
+      - "Platform Overview"
+      - "Technical Architecture"
+      - "Customer Success"
+      - "Roadmap and Next Steps"
+
+  - layout: section
+    title: "The Data Challenge"
+    subtitle: "Why modern data platforms matter"
+    variant: diagonal
+    accent_color: starBlue
+
+  - layout: columns
+    columns: 3
+    title: "Industry Trends"
+    accent_color: snowflakeBlue
+    items:
+      - heading: "Data Growth"
+        body: "25% annual increase in enterprise data volumes"
+      - heading: "Cloud Shift"
+        body: "80% of workloads moving to cloud by 2027"
+      - heading: "AI Demand"
+        body: "Every company becoming an AI company"
+
+  - layout: stat-grid
+    title: "The Scale of the Problem"
+    accent_color: valenciaOrange
+    variant: accent-bg
+    stats:
+      - number: "80%"
+        label: "Data is inaccessible"
+      - number: "68%"
+        label: "Report data silos"
+      - number: "$12.9M"
+        label: "Avg cost of bad data"
+
+  - layout: section
+    title: "Platform Overview"
+    subtitle: "One platform for all data workloads"
+    variant: side-panel
+    accent_color: firstLight
+
+  - layout: columns
+    columns: 4
+    title: "Core Capabilities"
+    variant: cards
+    accent_color: purpleMoon
+    items:
+      - icon: "data-engineering.svg"
+        heading: "Engineering"
+        body: "ETL and ELT pipelines"
+      - icon: "analytics.svg"
+        heading: "Analytics"
+        body: "SQL at any scale"
+      - icon: "secure-data.svg"
+        heading: "Governance"
+        body: "Security and compliance"
+      - icon: "ai.svg"
+        heading: "AI/ML"
+        body: "Native ML workloads"
+
+  - layout: split
+    title: "Multi-Cluster Architecture"
+    subtitle: "Compute-storage separation"
+    image: "photo_asset_product_build_group_developers.jpg"
+    image_position: left
+    accent_color: starBlue
+    bullets:
+      - "Independent compute scaling"
+      - "Shared data layer"
+      - "Zero resource contention"
+      - "Pay-per-second pricing"
+
+  - layout: section
+    title: "Technical Architecture"
+    subtitle: "Under the hood"
+    accent_color: snowflakeBlue
+
+  - layout: timeline
+    title: "Data Lifecycle"
+    accent_color: firstLight
+    steps:
+      - number: "1"
+        heading: "Ingest"
+        body: "Real-time and batch pipelines"
+      - number: "2"
+        heading: "Store"
+        body: "Columnar micro-partitions"
+      - number: "3"
+        heading: "Compute"
+        body: "Virtual warehouses"
+      - number: "4"
+        heading: "Share"
+        body: "Zero-copy access"
+      - number: "5"
+        heading: "Govern"
+        body: "Policy enforcement"
+
+  - layout: comparison
+    title: "Architecture Comparison"
+    accent_color: valenciaOrange
+    left:
+      heading: "Shared-Everything"
+      bullets:
+        - "Coupled compute and storage"
+        - "Resource contention"
+        - "Complex capacity planning"
+    right:
+      heading: "Snowflake"
+      bullets:
+        - "Separated compute and storage"
+        - "Unlimited concurrency"
+        - "Elastic auto-scaling"
+
+  - layout: table
+    title: "Feature Matrix"
+    accent_color: starBlue
+    headers: ["Capability", "Standard", "Enterprise", "Business Critical"]
+    rows:
+      - ["Virtual warehouses", "Yes", "Yes", "Yes"]
+      - ["Time travel", "1 day", "90 days", "90 days"]
+      - ["Failover", "No", "No", "Yes"]
+      - ["Private link", "No", "Yes", "Yes"]
+
+  - layout: section
+    title: "Customer Success"
+    subtitle: "Proven results across industries"
+    variant: diagonal
+    accent_color: purpleMoon
+
+  - layout: icon-grid
+    title: "Industry Solutions"
+    accent_color: firstLight
+    items:
+      - heading: "Financial Services"
+        body: "Risk analytics and compliance"
+      - heading: "Healthcare"
+        body: "Patient data unification"
+      - heading: "Retail"
+        body: "Real-time personalization"
+      - heading: "Technology"
+        body: "Product analytics at scale"
+
+  - layout: full-bleed
+    image: "background_background_blue_gradient_abstract.jpg"
+    overlay: dark
+    quote: "Snowflake is the platform we trust for our most critical data workloads."
+    attribution: "CTO, Fortune 500 Company"
+
+  - layout: quote
+    quote: "From 12-hour batch jobs to 15-second queries: our data team's life changed overnight."
+    attribution: "VP Data Engineering, Global Retail"
+    background: dark
+
+  - layout: section
+    title: "Roadmap and Next Steps"
+    subtitle: "Your path to the Data Cloud"
+    variant: side-panel
+    accent_color: valenciaOrange
+
+  - layout: columns
+    columns: 2
+    title: "Engagement Options"
+    variant: bordered
+    accent_color: snowflakeBlue
+    items:
+      - heading: "Proof of Concept"
+        body: "2-week guided POC with your data and use cases"
+      - heading: "Workshop"
+        body: "Half-day architecture workshop with Snowflake engineers"
+
+  - layout: stat-grid
+    title: "Why Now"
+    variant: inline
+    accent_color: starBlue
+    stats:
+      - number: "14 days"
+        label: "Average POC duration"
+      - number: "3x"
+        label: "Typical ROI"
+
+  - layout: thank-you
+    title: "Thank You"
+    subtitle: "contact@snowflake.com"

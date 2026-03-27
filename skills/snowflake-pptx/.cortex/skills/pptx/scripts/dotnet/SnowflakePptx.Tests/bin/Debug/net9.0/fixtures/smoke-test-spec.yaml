@@ -1,0 +1,192 @@
+# Smoke test spec -- every slide type with minimal valid content
+# Used by SmokeTests.cs to verify all 22 types build without errors.
+slides:
+  - type: title
+    title_line1: "SMOKE TEST"
+    title_line2: "ALL TYPES"
+    subtitle: "Automated Test Deck"
+    date: "March 2026"
+    notes: "This is a smoke test deck that exercises all 22 slide types to catch rendering regressions. Each slide uses minimal valid content to verify the template mapping and content injection pipeline works end to end."
+
+  - type: title_wave
+    title: "TITLE WAVE SLIDE"
+    subtitle: "Subtitle text here"
+    attribution: "Test Author  |  2026"
+    notes: "Title wave variant with wave pattern at bottom of slide. This verifies the title_wave template index mapping is correct and the wave pattern shape is preserved during cloning."
+
+  - type: title_customer_logo
+    title: "CUSTOMER LOGO TITLE"
+    subtitle: "Customer presentation"
+    attribution: "Test Author  |  2026"
+    notes: "Title slide variant with space for a customer logo alongside the Snowflake logo. Verifies the split blue/white layout renders correctly."
+
+  - type: title_headshot
+    title_line1: "HEADSHOT"
+    title_line2: "TITLE SLIDE"
+    subtitle: "With presenter photo"
+    date: "March 2026"
+    name: "Jane Doe"
+    speaker_title: "Solutions Engineer"
+    notes: "Title slide variant with presenter headshot. Verifies the headshot placeholder and speaker info text boxes are properly positioned."
+
+  - type: safe_harbor
+    notes: "Standard safe harbor and disclaimers slide. Verifies the safe harbor template index mapping is correct and all legal text shapes are preserved."
+
+  - type: agenda
+    title: "Agenda"
+    items:
+      - "Introduction"
+      - "Main Content"
+      - "Summary"
+    notes: "Agenda slide with bullet items. Verifies the agenda template layout renders correctly with the bullet list populating the body placeholder properly."
+
+  - type: section
+    title: "SECTION"
+    subtitle: "DIVIDER"
+    notes: "Dark blue section divider slide with branded graphics. Verifies the section template index mapping is correct."
+
+  - type: chapter_particle
+    title: "CHAPTER ONE"
+    subtitle: "INTRODUCTION"
+    notes: "Dark blue chapter divider with particle wave pattern. Verifies the chapter_particle template index mapping is correct."
+
+  - type: content
+    title: "Content Slide"
+    subtitle: "Standard layout"
+    bullets:
+      - "First bullet point with some detail"
+      - "Second bullet point with more info"
+      - "Third bullet point for completeness"
+    notes: "Standard one-column content slide with title, subtitle, and bullet points. This is the most commonly used slide type."
+
+  - type: two_column
+    title: "Two Column Layout"
+    subtitle: "Without titles"
+    body_left: "Left column content goes here with enough text to verify proper rendering of the two-column layout without titles."
+    body_right: "Right column content goes here with enough text to verify proper rendering of the two-column layout without titles."
+    notes: "Two-column layout without paragraph titles. Verifies the two_column template index mapping points to the correct slide."
+
+  - type: two_column_titled
+    title: "Two Column Titled"
+    subtitle: "With paragraph titles"
+    col1_title: "Column One"
+    col1_content: "First column content with paragraph title above it for visual organization and proper layout."
+    col2_title: "Column Two"
+    col2_content: "Second column content with paragraph title above it for visual organization and proper layout."
+    notes: "Two-column layout with paragraph titles above each column. Verifies the titled variant maps to the correct template slide."
+
+  - type: three_column_titled
+    title: "Three Column Titled"
+    subtitle: "With paragraph titles"
+    col1_title: "Column One"
+    col1_content: "First column content for the three column titled layout verification test with enough text to fill properly."
+    col2_title: "Column Two"
+    col2_content: "Second column content for the three column titled layout verification test with enough text to fill properly."
+    col3_title: "Column Three"
+    col3_content: "Third column content for the three column titled layout verification test with enough text to fill properly."
+    notes: "Three-column layout with paragraph titles. Verifies all three columns render correctly with their respective title shapes."
+
+  - type: three_column
+    title: "Three Column Plain"
+    subtitle: "Without titles"
+    col1: "First column body content for the plain three column layout verification test with sufficient text."
+    col2: "Second column body content for the plain three column layout verification test with sufficient text."
+    col3: "Third column body content for the plain three column layout verification test with sufficient text."
+    notes: "Three-column layout without individual column titles. This shares the three_column_titled template since no dedicated plain three-column slide exists."
+
+  - type: three_column_icons
+    title: "Three Column Icons"
+    subtitle: "With icon shapes"
+    col1_title: "Feature One"
+    col1_content: "Description of feature one with enough detail to fill the content area properly in the column layout."
+    col2_title: "Feature Two"
+    col2_content: "Description of feature two with enough detail to fill the content area properly in the column layout."
+    col3_title: "Feature Three"
+    col3_content: "Description of feature three with enough detail to fill the content area properly in the column layout."
+    notes: "Three-column layout with icon shapes above each column title. Verifies the icon shapes are preserved during cloning."
+
+  - type: four_column_numbers
+    title: "Four Column Numbers"
+    subtitle: "Big stat numbers"
+    col1_number: "42%"
+    col1_content: "Description of the first statistic shown above"
+    col2_number: "10M+"
+    col2_content: "Description of the second statistic shown above"
+    col3_number: "+55%"
+    col3_content: "Description of the third statistic shown above"
+    col4_number: "99.9%"
+    col4_content: "Description of the fourth statistic shown above"
+    notes: "Four-column layout with large stat numbers. This was one of the broken slide types before the index fix."
+
+  - type: four_column_icons
+    title: "Four Column Icons"
+    subtitle: "With icon shapes"
+    col1_title: "Speed"
+    col1_content: "Fast query performance across all workloads with automatic optimization built in."
+    col2_title: "Scale"
+    col2_content: "Elastic compute scaling across multiple cloud regions with instant provisioning."
+    col3_title: "Security"
+    col3_content: "Enterprise compliance and governance built into every layer of the platform."
+    col4_title: "Sharing"
+    col4_content: "Native marketplace with secure cross-cloud data sharing capabilities enabled."
+    notes: "Four-column layout with icons and titles. Another previously broken slide type. Verifies all four columns render correctly."
+
+  - type: split
+    title: "Split Layout"
+    subtitle: "Half image half text"
+    content_title: "Key Takeaway"
+    content: "This split slide verifies the half-image half-text layout renders correctly with the blue background on the content side."
+    notes: "Split slide with half image and half content area. Previously rendered as four-column template. Verifies correct template after fix."
+
+  - type: quote
+    quote: "Innovation distinguishes between a leader and a follower."
+    attribution: "Steve Jobs  |  CEO"
+    company: "Apple Inc."
+    notes: "Blue background quote slide without a photo. Verifies the quote text, attribution, and company name shapes all render correctly."
+
+  - type: quote_photo
+    quote: "The best way to predict the future is to invent it."
+    attribution: "Alan Kay  |  Researcher"
+    company: "Xerox PARC"
+    notes: "Blue background quote slide with a person photo placeholder. Verifies the photo shape is preserved alongside quote content."
+
+  - type: quote_simple
+    quote_text: "Data is the new oil."
+    attribution: "Clive Humby"
+    notes: "White background quote slide with large blue quotation marks. Verifies the quotation mark decorative shapes are preserved."
+
+  - type: table_styled
+    title: "Styled Table"
+    subtitle: "Row headers"
+    table:
+      headers: ["Feature", "Basic", "Pro", "Enterprise"]
+      rows:
+        - ["Storage", "1TB", "10TB", "Unlimited"]
+        - ["Users", "5", "50", "Unlimited"]
+        - ["Support", "Email", "Phone", "Dedicated"]
+    notes: "Styled table with row headers. Previously mapped to the wrong template slide. Verifies the table renders correctly."
+
+  - type: table_striped
+    title: "Striped Table"
+    subtitle: "Alternating rows"
+    table:
+      headers: ["Quarter", "Revenue", "Growth"]
+      rows:
+        - ["Q1", "$100M", "15%"]
+        - ["Q2", "$115M", "18%"]
+        - ["Q3", "$130M", "20%"]
+    notes: "Striped table with alternating row colors. Verifies the striped table template renders correctly after the index mapping fix."
+
+  - type: speaker_headshots
+    title: "Our Team"
+    speakers:
+      - name: "Jane Doe"
+        title: "CEO"
+        company: "Acme Corp"
+      - name: "John Smith"
+        title: "CTO"
+        company: "Acme Corp"
+    notes: "Speaker headshots slide with circular photo placeholders. Verifies the headshot shapes and text boxes render correctly."
+
+  - type: thank_you
+    notes: "Thank you closing slide with blue background. Verifies the thank_you template index mapping is correct."

@@ -1,0 +1,76 @@
+mood: "bold and energetic"
+slides:
+  - layout: title
+    title: "Bold Energetic Theme"
+    subtitle: "Test Presenter | Snowflake | March 2026"
+
+  - layout: agenda
+    title: "Agenda"
+    items:
+      - "The Opportunity"
+      - "Our Solution"
+      - "Results"
+      - "Call to Action"
+
+  - layout: section
+    title: "The Opportunity"
+    subtitle: "Data is the new differentiator"
+    variant: side-panel
+    accent_color: valenciaOrange
+
+  - layout: columns
+    columns: 2
+    title: "Before and After"
+    variant: cards
+    accent_color: firstLight
+    items:
+      - heading: "Legacy World"
+        body: "Siloed data, slow queries, high costs"
+      - heading: "Data Cloud"
+        body: "Unified data, instant insights, elastic cost"
+
+  - layout: stat-grid
+    title: "Impact Metrics"
+    variant: accent-bg
+    accent_color: valenciaOrange
+    stats:
+      - number: "10x"
+        label: "Faster insights"
+      - number: "60%"
+        label: "Cost reduction"
+      - number: "Zero"
+        label: "Downtime"
+
+  - layout: timeline
+    title: "Adoption Journey"
+    accent_color: starBlue
+    steps:
+      - number: "1"
+        heading: "Discover"
+        body: "Assess current state"
+      - number: "2"
+        heading: "Pilot"
+        body: "Prove the value"
+      - number: "3"
+        heading: "Scale"
+        body: "Roll out enterprise-wide"
+
+  - layout: comparison
+    title: "Legacy vs. Modern"
+    accent_color: snowflakeBlue
+    left:
+      heading: "Traditional DWH"
+      bullets:
+        - "Fixed capacity"
+        - "Manual tuning"
+        - "Single cloud"
+    right:
+      heading: "Snowflake"
+      bullets:
+        - "Auto-scaling"
+        - "Zero tuning"
+        - "Multi-cloud"
+
+  - layout: thank-you
+    title: "Thank You"
+    subtitle: "lets-go@snowflake.com"
